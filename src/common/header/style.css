@@ -1,0 +1,157 @@
+.head-wrapper {
+  position: relative;
+  height: 56px;
+  border-bottom: 1px solid #f0f0f0;
+  /* background: red; */
+}
+
+.head-logo {
+  position: absolute;
+  width: 100px;
+  height: 100%;
+  background: url('../../statics/logo.png');
+  background-size: contain;
+  /* display: block; */
+}
+
+.head-nav {
+  height: 100%;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 100px;
+  box-sizing: border-box;
+}
+
+.head-nav-item {
+  line-height: 56px;
+  padding: 0 15px;
+  font-size: 17px;
+}
+
+.head-nav-item-left {
+  color: #333;
+  float: left;
+}
+
+.head-nav-item-active {
+  color: #ea6f5a;
+}
+
+.head-nav-item-right {
+  color: #969696;
+  float: right;
+}
+
+.search-wrapper {
+  position: relative;
+  float: left;
+}
+
+.search-item {
+  width: 160px;
+  height: 38px;
+  outline: none;
+  border: 1px solid #eee;
+  border-radius: 40px;
+  background: #ddd;
+  margin-top: 9px;
+  padding: 0 30px 0 20px;
+  box-sizing: border-box;
+  font-size: 14px;
+  margin-left: 15px;
+  color: #666;
+}
+
+.search-item::placeholder {
+  color: #999;
+}
+
+.search-item-focus {
+  width: 200px;
+}
+
+.input-slide-enter {
+  transition: all .2s ease-out;
+}
+
+.input-slide-enter-active {
+  width: 200px;
+}
+
+.input-slide-exit {
+  transition: all .2s ease-in;
+}
+
+.input-slide-exit-active {
+  width: 160px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 15px;
+}
+
+.search-icon-focus {
+  background: #999;
+  border-radius: 15px;
+  color: #fff;
+}
+
+.search-list-wrapper {
+  position: absolute;
+  width: 240px;
+  top: 56px;
+  /* height: 100px; */
+  padding: 20px 20px 0 20px;
+  background: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .2);
+  box-sizing: border-box;
+}
+
+.search-list-title {
+  margin-bottom: 20px;
+  line-height: 15px;
+  font-size: 14px;
+  color: #969696;
+  display: inline-block;
+}
+
+.search-list-switch {
+  float: right;
+  margin-bottom: 20px;
+  top: 0;
+  line-height: 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.search-list-switch-icon {
+  transition: all .5s ease-in;
+  transform-origin: center center;
+  transform: rotate(50deg);
+}
+
+.search-list-item {
+  padding: 0 5px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  line-height: 20px;
+  font-size: 12px;
+  color: #969696;
+  display: inline-block;
+  margin: 0 10px 10px 0;
+  color: #787878;
+}
+
+.head-addition {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+}
