@@ -9,7 +9,7 @@ const defaultState = fromJS({
 })
 
 export default (state = defaultState, action) => {
-  console.log('reducer', action)
+  // console.log('reducer', action)
   switch(action.type) {
     case constants.SEARCH_INPUT_FOCUS:
       return state.set('searchInputFocus', action.focus)

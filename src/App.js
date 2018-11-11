@@ -5,6 +5,9 @@ import './App.css';
 import './statics/iconfont/iconfont.css'
 import store from './store'
 import Header from './common/header'
+import Login from './pages/login'
+import Home from './pages/home'
+import Write from './pages/write'
 
 class App extends PureComponent {
   render() {
@@ -14,10 +17,11 @@ class App extends PureComponent {
           <Router>
             <div>
               <Header/>
-                <Route exact path='/' component={() => <div>home</div>}/>
+                <Route exact path='/' component={Home}/>
               <Route path='/detail' component={() => <div>detail</div>}/>
-              <Route path='/login' component={() => <div>login</div>}/>
-              <Route path='/write' component={() => <div>write</div>}/>
+              <Route path='/login' component={Login}/>
+              <Route path='/write' component={Write}/>
+              <Route path='/register' component={() => <div>register</div>}/>
             </div>
           </Router>
         </Fragment>

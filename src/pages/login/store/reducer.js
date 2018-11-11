@@ -6,7 +6,7 @@ const defaultState = fromJS({
 })
 
 export default (state = defaultState, action) => {
-  console.log('reducer', action)
+  // console.log('reducer', action)
   switch(action.type) {
     case constants.SET_LOGIN:
       return state.set('login', action.login)
